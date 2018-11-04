@@ -1,0 +1,75 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif; }
+
+::selection {
+  background-color: lightseagreen;
+  color: #000; }
+
+.heading-primary {
+  color: #000;
+  padding: 2rem 2rem 1.5rem 2rem;
+  width: 20rem;
+  font-size: 4rem;
+  text-align: center;
+  position: relative;
+  margin: 0 auto;
+  background-color: #fff;
+  text-transform: lowercase; }
+
+.text-chunk {
+  font-size: 3rem;
+  line-height: 4.5rem;
+  color: white;
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+  padding: 5rem 0; }
+
+.header__hero {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/glacier_1_m_bw.jpg);
+  background-size: cover;
+  background-position: center;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 83vh, 50% 94vh, 0 83vh);
+  clip-path: polygon(0 0, 100% 0, 100% 83vh, 50% 94vh, 0 83vh); }
+
+main {
+  filter: drop-shadow(0px -5px 10px rgba(0, 0, 0, 0.6)); }
+
+.section-about {
+  height: 112vh;
+  width: 100%;
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+  padding-top: 20vh;
+  clip-path: polygon(0 0, 50% 11vh, 100% 0, 100% 100%, 0 100%);
+  margin-top: -12vh;
+  position: relative; }
+
+.section-cave {
+  height: 110vh;
+  width: 100%;
+  background-image: url(../img/cave_L.jpg);
+  background-size: cover;
+  background-position: center; }
+
+.section-separator {
+  height: 20vh;
+  width: 100%;
+  margin-top: -1vh;
+  background-color: #000;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 84%, 50% 94vh, 0 83vh);
+  clip-path: polygon(0 0, 100% 0, 100% 10vh, 50% 100%, 0 10vh); }

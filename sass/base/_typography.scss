@@ -1,0 +1,22 @@
+.heading-primary {
+    color: $color-black;
+    padding: 2rem 2rem 1.5rem 2rem;
+    width: 20rem;
+    font-size: 4rem;
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+    background-color: $color-white;
+    text-transform: lowercase;
+}
+
+.text-chunk {
+    font-size: 3rem;
+    line-height: 4.5rem;
+    color: white;
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    padding: 5rem 0;
+}
+

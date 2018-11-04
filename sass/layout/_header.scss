@@ -1,0 +1,13 @@
+.header {
+
+    &__hero {
+        width: 100%;
+        height: 100vh;
+        background-image: url(../img/glacier_1_m_bw.jpg);
+        background-size: cover;
+        background-position: center;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 83vh, 50% 94vh, 0 83vh);
+        clip-path: polygon(0 0, 100% 0, 100% 83vh, 50% 94vh, 0 83vh);
+    }
+
+}

@@ -1,0 +1,14 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Matt Dahlseid's portfolio",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/styles.css -w"
+  },
+  "author": "Matt Dahlseid",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.9.4"
+  }
+}
