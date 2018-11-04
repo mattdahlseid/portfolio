@@ -8,6 +8,11 @@
     margin: 0 auto;
     background-color: $color-white;
     text-transform: lowercase;
+    transition: all .3s;
+
+    &:hover {
+        box-shadow: 1rem 1rem 0rem rgba($color-white,.4);
+    }
 }
 
 .text-chunk {

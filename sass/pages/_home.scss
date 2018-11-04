@@ -8,10 +8,16 @@ main {
     background-color: black;
     background-size: cover;
     background-position: center;
-    padding-top: 20vh;
-    clip-path: polygon(0 0, 50% 11vh, 100% 0, 100% 100%, 0 100%);
-    margin-top: -12vh;
+    padding-top: 10vh;
     position: relative;
+    margin-top: 0;
+
+    @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+        -webkit-clip-path: polygon(0 0, 50% 11vh, 100% 0, 100% 100%, 0 100%);
+        clip-path: polygon(0 0, 50% 11vh, 100% 0, 100% 100%, 0 100%);
+        margin-top: -12vh;
+        padding-top: 20vh;
+    }
 }
 
 .section-cave {

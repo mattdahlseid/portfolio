@@ -6,8 +6,55 @@
         background-image: url(../img/glacier_1_m_bw.jpg);
         background-size: cover;
         background-position: center;
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 83vh, 50% 94vh, 0 83vh);
-        clip-path: polygon(0 0, 100% 0, 100% 83vh, 50% 94vh, 0 83vh);
+        background-attachment: fixed;
+
+        @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+            -webkit-clip-path: polygon(0 0, 100% 0, 100% 83vh, 50% 94vh, 0 83vh);
+            clip-path: polygon(0 0, 100% 0, 100% 83vh, 50% 94vh, 0 83vh);
+        }
+    }
+
+    &__cluster {
+        position: fixed;
+        margin: 20vh 0 0 2%;
+        width: 46rem;
+    }
+
+    &__title {
+        font-size: 10rem;
+        color: $color-black;;
+        font-weight: 900;
+        position: relative;
+
+        &-word {
+            background-color: rgba($color-white,.5);
+            position: relative;
+            padding: 4rem 2rem 0rem 2rem;
+            box-shadow: 0 2rem 4rem rgba($color-black,.5);
+
+            &:first-child {
+                width: 27rem;
+                z-index: 2;
+            }
+
+            &:last-child {
+                margin-top: -2rem;
+            }
+        }
+
+        &-skills {
+            position: relative;
+            width: 46rem;
+            height: 5.4rem;
+            background-color: $color-red;
+            border-top: .5rem solid black;
+            color: black;
+            font-size: 3rem;
+            padding: 1rem;
+            text-align: center;
+            text-transform: lowercase;
+            box-shadow: 0 2rem 4rem rgba($color-black,.5);
+        }
     }
 
 }
