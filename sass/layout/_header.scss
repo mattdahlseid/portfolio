@@ -1,17 +1,44 @@
 .header {
 
-    &__hero {
-        width: 100%;
-        height: 100vh;
-        background-image: url(../img/glacier_1_m_bw.jpg);
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
 
-        @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+   /* @keyframes openDown {
+        0% {
+            -webkit-clip-path: polygon(0 0, 100% 0, 100% 83vh, 0 83vh, 0 83vh);
+            clip-path: polygon(0 0, 100% 0, 100% 100vh, 0 100vh, 0 83vh);
+        }
+        30% {
+            -webkit-clip-path: polygon(0 0, 100% 0, 100% 83vh, 0 83vh, 0 83vh);
+            clip-path: polygon(0 0, 100% 0, 100% 100vh, 0 100vh, 0 83vh);
+        }
+        100% {
             -webkit-clip-path: polygon(0 0, 100% 0, 100% 83vh, 50% 94vh, 0 83vh);
             clip-path: polygon(0 0, 100% 0, 100% 83vh, 50% 94vh, 0 83vh);
         }
+    }*/
+
+
+
+
+    &__hero {
+        width: 100%;
+        height: 100vh;
+        background-image: url(../img/glacier_blur.png);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        pointer-events: none;
+        //transition: all .5s;
+        overflow: hidden;
+
+        /*&:hover {
+            background-image: url(../img/glacier_blur.png);
+        }
+
+       /*@supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+            -webkit-clip-path: polygon(0 0, 100% 0, 100% 83vh, 50% 94vh, 0 83vh);
+            clip-path: polygon(0 0, 100% 0, 100% 83vh, 50% 94vh, 0 83vh);
+            animation: openDown 3s;
+        }*/
     }
 
     &__cluster {
@@ -24,7 +51,7 @@
         font-size: 10rem;
         color: $color-black;;
         font-weight: 900;
-        position: relative;
+        pointer-events: auto;
 
         &-word {
             background-color: rgba($color-white,.5);
@@ -45,7 +72,7 @@
         &-skills {
             position: relative;
             width: 46rem;
-            height: 5.4rem;
+            height: 5.6rem;
             background-color: $color-red;
             border-top: .5rem solid black;
             color: black;
@@ -54,7 +81,10 @@
             text-align: center;
             text-transform: lowercase;
             box-shadow: 0 2rem 4rem rgba($color-black,.5);
+            pointer-events: auto;
         }
+
+
     }
 
 }

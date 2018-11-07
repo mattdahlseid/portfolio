@@ -1,0 +1,79 @@
+.work__projects {
+    width: 70%;
+    margin: 0 auto 0 auto;
+
+    &__box {
+        width: 65%;
+        height: 50vh;
+        background-color: orange;
+        cursor: pointer;
+        margin: 0 auto 4rem auto;
+        transition: all .5s;
+        position: relative;
+        display: flex;
+        align-items: center;
+        background-size: cover;
+        background-position: center;
+
+        &:hover {
+            width: 75%;
+        }
+
+        &__title {
+            width: 100%;
+            position: absolute;
+            text-align: center;
+            color: white;
+            margin-top: -2rem;
+
+            &__main {
+                font-size: 4rem;
+                font-weight: 900;
+                margin-bottom: .5rem;
+            }
+
+            &__cat {
+                display: inline-block;
+                text-align: center;
+                font-size: 2rem;
+                border-top: .3rem solid $color-red;
+                padding-top: 1rem;
+            }
+        }
+
+        &:nth-child(even) {
+            background-color: purple;
+        }
+
+        &-1 {
+            background-image: url(../img/intro_main.jpg);
+        }
+
+        &-2 {
+            background-image: url(../img/explore_four.png);
+        }
+
+        &-3 {
+
+        }
+
+        &-4 {
+
+        }
+
+        &-5 {
+
+        }
+
+        &-6 {
+
+        }
+
+        /*&__diagonal {
+            border-width: 0 700px 50vh 0;
+            border-style: solid;
+            border-color: transparent transparent rgba(0, 245, 200, 0.8);
+        }*/
+
+    }
+}

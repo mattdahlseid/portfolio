@@ -9,19 +9,37 @@
     background-color: $color-white;
     text-transform: lowercase;
     transition: all .3s;
+    width: 100%;
 
     &:hover {
         box-shadow: 1rem 1rem 0rem rgba($color-white,.4);
     }
 }
 
-.text-chunk {
-    font-size: 3rem;
-    line-height: 4.5rem;
+.text-block {
+    font-size: 4rem;
+    line-height: 6rem;
     color: white;
-    width: 50%;
+    width: 60%;
     display: block;
     margin: 0 auto;
     padding: 5rem 0;
 }
+
+.heavy {
+    font-weight: 900;
+}
+
+
+p {
+    &:not(:last-child) {
+        margin-bottom: 2rem;
+    }
+}
+
+
+.red {
+    color: $color-red;
+}
+
 
