@@ -1,0 +1,37 @@
+.contact {
+    &__header {
+        font-size: 15vw;
+        line-height: 14vw;
+        color: white;
+        font-weight: 900;
+        text-transform: uppercase;
+        width: 100%;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    &__content-message {
+        width: 50%;
+        height: fit-content;
+        margin: 0 auto;
+        color: $color-white;
+        font-size: 1.5vw;
+        line-height: 2vw;
+        margin-top: 5rem;
+    }
+
+    &__content-links {
+        width: 100%;
+        display: inline-block;
+        font-size: 4rem;
+        text-align: center;
+        margin: 2rem auto 0 auto;
+        cursor: pointer;
+
+        & i {
+            padding: 0 1rem;
+        }
+
+        
+    }
+}

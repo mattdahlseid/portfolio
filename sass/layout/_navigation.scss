@@ -2,16 +2,15 @@
     display: block;
     position: fixed;
     height: 4rem;
-    width: 50rem;
+    width: 40rem;
     right: 0;
-    z-index: 0;
 
     &__list {
         list-style: none;
     }
 
     &__item {
-        padding-top: 2rem;
+        padding-top: 1.5rem;
         width: 24%;
         text-align: center;
         display: inline-block;
@@ -20,8 +19,8 @@
     &__link {
         &:link,
         &:visited {
-            font-size: 3rem;
-            padding: 2rem 2rem 1.6rem 2rem;
+            font-size: 2.3rem;
+            padding: 1.5rem 2rem 1.2rem 2rem;
             text-decoration: none;
             color: $color-black;
             transition: all .4s;
@@ -39,4 +38,5 @@
     &:hover &__link:not(:hover) {
         text-decoration: line-through $color-red;
     }
+
 }

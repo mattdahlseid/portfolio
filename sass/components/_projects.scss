@@ -1,79 +1,313 @@
 .work__projects {
-    width: 70%;
-    margin: 0 auto 0 auto;
+    width: 85%;
+    height: 100%;
+    //display: table-cell;
+    //clear: both;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20rem;
+    margin: 0 auto;
+    background-color: white;
+
+
+    &__category {
+        width: 100%;
+        text-align: center;
+        font-size: 10.5vw;
+        font-weight: 900;
+        text-transform: uppercase;
+        margin: 5rem auto 2rem auto;
+        
+        &:first-child {
+            margin: 5rem auto 2rem auto;
+        }
+    }
+
+    &__container {
+        width: 65%;
+        height: 50vh;
+        margin: 4rem auto;
+        overflow: hidden;
+        transition: all .4s;
+        position: relative;
+
+        &:hover {
+            //box-shadow: none;
+        }
+    
+
+        &:last-child {
+            margin: 4rem auto 8rem auto;
+        }
+    
+        @keyframes hoverTransitionIn {
+            0% {
+                width: 65%;
+                height: 50vh;
+            }
+            40% {
+                width: 70%;
+                height: 50vh;
+            }
+            100% {
+                width: 70%;
+                height: 80vh;
+            }
+        }
+        // add this to a class to add when clicked to close
+        @keyframes hoverTransitionOut {
+            0% {
+                width: 70%;
+                height: 80vh;
+            }
+            40% {
+                width: 70%;
+                height: 50vh;
+            }
+            100% {
+                width: 65%;
+                height: 50vh;
+            }
+        }
+
+        &__grow {
+            animation: hoverTransitionIn .8s;
+            width: 70%;
+            height: 80vh;
+        }
+
+        &__shrink {
+            animation: hoverTransitionOut .8s;
+            width: 65%;
+            height: 50vh;
+        }
+
+    }
 
     &__box {
-        width: 65%;
+        width: 100%;
         height: 50vh;
         background-color: orange;
         cursor: pointer;
-        margin: 0 auto 4rem auto;
-        transition: all .5s;
+        transition: all .3s;
         position: relative;
         display: flex;
         align-items: center;
+        justify-content: center;
+        text-align: center;
         background-size: cover;
         background-position: center;
+        filter: contrast(110%) brightness(110%);
+
+        &:hover &__title {
+            background-color: rgba($color-black,.8);
+            border: .5rem solid rgba($color-white,.8);
+        }
 
         &:hover {
-            width: 75%;
+            //box-shadow: 0 .4rem 1rem rgba($color-black,.5);
         }
 
         &__title {
-            width: 100%;
-            position: absolute;
-            text-align: center;
-            color: white;
-            margin-top: -2rem;
+            width: fit-content;
+            height: fit-content;
+            color: $color-white;
+            //border: .5rem solid $color-black;
+            padding: 2rem;
+            transition: all .7s;
+            border: .5rem solid transparent;
+            background-color: none;
+            //display: table-cell;
+            //vertical-align: middle;
+
+
+            &__back {
+                background-color: rgba($color-black,.5);
+                border: .5rem solid rgba($color-white,.8);
+            }
+
+            &__noBack {
+                border: .5rem solid transparent;
+                background-color: none;
+            }
 
             &__main {
-                font-size: 4rem;
+                font-size: 3vw;
                 font-weight: 900;
                 margin-bottom: .5rem;
+                transition: all .3s;
             }
 
             &__cat {
                 display: inline-block;
-                text-align: center;
                 font-size: 2rem;
                 border-top: .3rem solid $color-red;
                 padding-top: 1rem;
+                transition: all .3s;
             }
         }
 
-        &:nth-child(even) {
-            background-color: purple;
-        }
-
         &-1 {
-            background-image: url(../img/intro_main.jpg);
+            background-image: linear-gradient(
+                to right bottom, 
+                rgba($color-black, 0.2), 
+                rgba($color-black, 0.2)), 
+            url('../img/intro_main.jpg');
         }
 
         &-2 {
-            background-image: url(../img/explore_four.png);
+            background-image: linear-gradient(
+                to right bottom, 
+                rgba($color-black, 0.2), 
+                rgba($color-black, 0.2)), 
+            url('../img/explore_four.png');
+            background-position: top;
         }
 
         &-3 {
-
+            background-image: linear-gradient(
+                to right bottom, 
+                rgba($color-black, 0.2), 
+                rgba($color-black, 0.2)), 
+            url('../img/memory-game.png');
         }
 
         &-4 {
-
+            background-image: linear-gradient(
+                to right bottom, 
+                rgba($color-black, 0.2), 
+                rgba($color-black, 0.2)), 
+            url('../img/arcade_game.png');
         }
 
         &-5 {
-
+            background-image: linear-gradient(
+                to right bottom, 
+                rgba($color-black, 0.2), 
+                rgba($color-black, 0.2)), 
+            url('../img/turcios.png');
+            background-position: top;
         }
 
         &-6 {
-
+            background-image: linear-gradient(
+                to right bottom, 
+                rgba($color-black, 0.2), 
+                rgba($color-black, 0.2)), 
+            url('../img/prince.png');
+            background-position: top;
         }
 
-        /*&__diagonal {
-            border-width: 0 700px 50vh 0;
-            border-style: solid;
-            border-color: transparent transparent rgba(0, 245, 200, 0.8);
-        }*/
+        &-7 {
+            background-image: linear-gradient(
+                to right bottom, 
+                rgba($color-black, 0.2), 
+                rgba($color-black, 0.2)), 
+            url('../img/nduwikunda.jpg');
+            background-position: top;
+        }
+
+        &-8 {
+            background-image: linear-gradient(
+                to right bottom, 
+                rgba($color-black, 0.2), 
+                rgba($color-black, 0.2)), 
+            url('../img/kurkas.png');
+            background-position: top;
+        }
 
     }
+
+    &__desc {
+        width: 100%;
+        height: 30vh;
+        z-index: 1;
+        position: absolute;
+        font-size: 1.6rem;
+        line-height: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        font-family: 'Lato', sans-serif;
+        letter-spacing: 1px;
+
+        &__text {
+           width: 100%;
+           //background-color: rgba($color-seagreen,.7);
+           padding: 1rem 0 0 0;
+           line-height: 2.2rem;
+           text-align: center;
+           //box-shadow: inset 0 1rem 2rem -1rem rgba($color-black,.4);
+        }
+
+        &__built-with {
+            margin-top: 1.8rem;
+            display: inline-block;
+        }
+
+        &__links {
+            width: 100%;
+            margin: 0 0 1.5rem 0;
+            text-align: center;
+
+            & a {
+                text-decoration: none;
+                display: inline-block;
+                position: relative;
+                z-index: 1;
+                padding: .8rem 1rem .5rem 1rem;
+                color: $color-black;
+                text-transform: uppercase;
+                margin-right: 2rem;
+                letter-spacing: 1px;
+                transition: all .3s;
+                text-align: center;
+                border-bottom: .3rem solid $color-red;
+                font-size: 2rem;
+
+               &:after {
+                    content: "";
+                    position: absolute;
+                    padding: .8rem 1rem .5rem 1rem;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    transform: scaleY(0);
+                    transform-origin: bottom center;
+                    background-color: $color-red;
+                    color: $color-white;
+                    z-index: -1;
+                    transition: transform .2s;
+                }
+
+                &:hover {
+                    color: $color-white;
+                }
+                &:hover::after {
+                    transform: scaleY(1);
+                    color: $color-white;
+                }
+            }
+        }
+    }
+
+    @keyframes textUp {
+        0% {
+            opacity: 0;
+            transform: translateY(-10rem)
+        }
+        40% {
+            opacity: 0;
+            transform: translateY(-10rem)
+        }
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    &__container:hover &__desc__text {
+        //animation: textUp 1.5s;
+    }
+
 }
