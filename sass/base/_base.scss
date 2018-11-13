@@ -14,6 +14,16 @@ html {
 body {
     box-sizing: border-box;
     font-family: 'Josefin Sans', sans-serif;
+    /* 
+     * Put background image here to deal with Edge/IE bug that
+     * causes jittery scrolling on fixed background images
+    */
+    /*
+    background-image: url(../img/glacier.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    */
 }
 
 ::selection {

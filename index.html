@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Matt Dahlseid is a front-end web developer award-winning multimedia journalist who has a passion for creating e storytelling.">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
 
@@ -44,54 +45,75 @@
 
     <header class="header" id="home">
         <div class="header__hero">
+            <img src="img/glacier.jpg" class="header__hero__image" alt="A man looks across a glacial lake at a mountain">
             <div class="header__cluster">
                 <h1 class="header__title">
                     Matt Dahlseid
-                    <!--<div class="header__title-word">Matt</div>
-                    <div class="header__title-word">Dahlseid</div>-->
                 </h1>
             </div>
         </div>
     </header>
 
-
     <main>
 
         <section class="section-about" id="about">
             <div class="about__skills-peek about__skills-peek-show">Front-end developer | Storyteller</div>
-            <div class="text-block">
-                <p>I'm a front-end web developer, multimedia journalist and content editor who possesses a love of storytelling and a passion for creating engaging user experiences. I'm currently a free agent seeking opportunities to join forces with fellow creators to produce stunning, original work that leaves a lasting impression.</p>
-            </div>
-            <div class="skills-tools-box hidden">
-                <div class="skills">
-                    <p class="heavy">skills</p>
-                    <p>front-end development</p>
-                    <p>responsive design</p>
-                    <p>writing & editing</p>
-                    <p>photography</p>
-                    <p>desktop publishing</p>
+            <div class="about__description">
+                <div class="about__description__title">
+                    About<span class="red">/</span>ME
                 </div>
-                <div class="tools">
-                    <p class="heavy">tools</p>
-                    <p>HTML5</p>
-                    <p>CSS3 / Sass / SCSS</p>
-                    <p>JavaScript / jQuery</p>
-                    <p>React</p>
-                    <p>Photoshop / Illustrator</p>
+                <div class="about__description__text">
+                    <p>I'm a curious, versatile creative who possesses a passion for developing engaging user experiences, sharing powerful stories and exploring the outdoors.</p>
+                    <p>During nearly a decade in the newspaper industry I wrote award-winning features, designed and edited sports sections, had hundreds of photos published in print and online, produced podcasts, and much more.</p>
+                    <p>I've long been interested in interactive storytelling, which has led me to pursue front-end development and UX design. I was awarded a Grow with Google Developer scholarship in early 2018 and recently completed Udacity's six-month Front-End Web Developer Nanodegree program.</p>
+                    <p>I'm currently seeking opportunities to produce engaging, original work with a team of talented creators.</p>
                 </div>
             </div>
-            <div class="length">
-                <a href="../img/Matt_Dahlseid_resume.pdf" target="_blank" rel="noopener noreferrer">
-                    <div class="resume">View resume</div>
-                </a>
+            <div class="about__skills">
+                <div class="about__skills-container">
+                    <div class="about__skills-skills">
+                        <div class="about__skills__title">Skills</div>
+                        <p>Front-end development</p>
+                        <p>Responsive design</p>
+                        <p>Writing & editing</p>
+                        <p>Photography</p>
+                        <p>Desktop publishing</p>
+                    </div>
+                    <div class="about__skills-tools">
+                        <div class="about__skills__title">Tools</div>
+                        <p>HTML5</p>
+                        <p>CSS3 / Sass / SCSS</p>
+                        <p>JavaScript / jQuery</p>
+                        <p>React</p>
+                        <p>Photoshop / Illustrator</p>
+                    </div>
+                    <div class="about__skills-experience">
+                        <div class="about__skills__title">Experience</div>
+                        <p><strong>Quad-City Times</strong> - Sports reporter / content editor</p>
+                        <p>Davenport, Iowa | 2013-2016</p>
+                        <br>
+                        <p><strong>Marshall Independent</strong> - Sports editor / reporter</p>
+                        <p>Marshall, Minnesota | 2009-2013</p>
+                    </div>
+                    <!--
+                    <div class="about__skills-experience">
+                        <div class="about__skills__title">Education</div>
+                        <p><strong>University of South Dakota</strong> | Fall 2005 - Spring 2009
+                        <p>B.A., Contemporary Media & Journalism; summa cum laude (3.97 GPA)</p>
+                        <br>
+                        <p><strong>Udacity Front-End Web Developer Nanodegree</strong> | 2018</p>
+                        <p>Chosen as a recipient of a full scholarship as a top performer in the Grow with Google Challenge Scholarship program</p>
+                    </div>
+                    -->
+                    <div class="about__skills-resume">
+                        <a href="../img/Matt_Dahlseid_resume.pdf" target="_blank" rel="noopener noreferrer">View Resume</a>
+                    </div>
+                    <div class="about__skills-resume">
+                        <a href="https://www.linkedin.com/in/matt-dahlseid/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    </div>
+                </div>
             </div>
         </section>
-
-
-       <section class="section-cave">
-        </section>
-
-        <div class="separator-bottom"></div>
 
         <section class="section-work" id="work">
             <div class="section-work__bar">
@@ -218,7 +240,7 @@
                     <div class="work__projects__desc">
                         <div class="work__projects__desc__text">
                             <div class="work__projects__desc__links">
-                                    <a href="../img/Finding_a_new_home.pdf" target="_blank" rel="noopener noreferrer">View PDF</a>
+                                <a href="../img/Finding_a_new_home.pdf" target="_blank" rel="noopener noreferrer">View PDF</a>
                             </div>
                             Homeless on the streets of a rural Minnesota town, an orphan from Honduras was barely scraping by until the local soccer community brought him in. Won best sports story from the Minnesota Newspaper Association for 2011 for all daily newspapers. 
                             <br>
@@ -306,14 +328,14 @@
             </div>
             <div class="contact__content">
                 <div class="contact__content-message">
-                    Want to chat about web development and interactive storytelling? Or maybe collaborate on a project? Or how about share your favorite hiking trails and national parks? I'd love to chat. Please, drop me a line via email or your preferred social media platform.
+                    Want to talk about web development and interactive storytelling? Or maybe collaborate on a project? Or how about share your favorite hiking trails and national parks? I'd love to connect. Drop me a line via email or your preferred social media platform. I'll be patiently waiting on this sand dune reflecting on existence.
                 </div>
                 <div class="contact__content-links">
                     <a href="https://github.com/mattdahlseid" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-                    <i class="fab fa-linkedin"></i>
-                    <a href="mailto:matt.dahlseid@gmail.com"></a><i class="far fa-envelope"></i>
-                    <i class="fab fa-twitter"></i>
-                    <i class="fab fa-instagram"></i>
+                    <a href="https://www.linkedin.com/in/matt-dahlseid/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:matt.dahlseid@gmail.com"><i class="far fa-envelope"></i></a>
+                    <a href="https://twitter.com/wander_in_words" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/matt_b_trippin/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
         </section>

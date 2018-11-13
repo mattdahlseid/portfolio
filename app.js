@@ -6,8 +6,9 @@ $(document).on('click', 'a[href^="#"]', function (event) {
     }, 500);
 });
 
+/*
 (function() {
-    let skillsEl = $(".skills-tools-box"),
+    let skillsEl = $(".about__skills"),
         skillsElOffset = skillsEl.offset().top/2,
         documentEl = $(document);
 
@@ -17,7 +18,9 @@ $(document).on('click', 'a[href^="#"]', function (event) {
             }
         });
 })();
+*/
 
+// fades out subhead on scroll up 
 (function() {
     let skillsPeek = $(".about__skills-peek"),
         skillsPeekOffset = skillsPeek.offset().top/100,
@@ -52,20 +55,6 @@ imageBox.on("click", function() {
 })
 
 
-/*$(document).scroll(function() {
-    var y = $(document).scrollTop(), //get page y value 
-        header = $(".section-work__bar__head"),
-        vh = $('.header').height() + $('#about').height(),
-        heightWithWork = vh + $('#work');
-    if (y >= vh )  {
-        header.css({"position" : "fixed", "top" : "0", "left" : "0", "font-size" : "4rem", "text-align" : "center"});
-        $("body").append(header);
-    } else {
-        $("body").remove(header);
-        header.css("position", "relative");
-    }
-})*/
-
 // handle visibility of menu icon
 $(document).scroll(function() {
     var y = $(document).scrollTop(), //get page y value 
@@ -79,6 +68,7 @@ $(document).scroll(function() {
     }
 })
 
+// removes nav menu after a link is clicked
 $('.menu ul li a').on("click", function (e) {
-    $('input[type=checkbox]').prop('checked',false);
+    $('input[type=checkbox]').prop('checked', false);
 });

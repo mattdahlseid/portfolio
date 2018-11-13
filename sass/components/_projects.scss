@@ -1,14 +1,11 @@
 .work__projects {
     width: 85%;
     height: 100%;
-    //display: table-cell;
-    //clear: both;
     display: flex;
     flex-wrap: wrap;
-    padding-top: 20rem;
+    padding-top: 5rem;
     margin: 0 auto;
     background-color: white;
-
 
     &__category {
         width: 100%;
@@ -16,11 +13,7 @@
         font-size: 10.5vw;
         font-weight: 900;
         text-transform: uppercase;
-        margin: 5rem auto 2rem auto;
-        
-        &:first-child {
-            margin: 5rem auto 2rem auto;
-        }
+        margin: 3rem auto 0 auto;
     }
 
     &__container {
@@ -29,12 +22,7 @@
         margin: 4rem auto;
         overflow: hidden;
         transition: all .4s;
-        position: relative;
-
-        &:hover {
-            //box-shadow: none;
-        }
-    
+        position: relative;    
 
         &:last-child {
             margin: 4rem auto 8rem auto;
@@ -87,7 +75,6 @@
     &__box {
         width: 100%;
         height: 50vh;
-        background-color: orange;
         cursor: pointer;
         transition: all .3s;
         position: relative;
@@ -101,38 +88,26 @@
 
         &:hover &__title {
             background-color: rgba($color-black,.8);
-            border: .5rem solid rgba($color-white,.8);
-        }
-
-        &:hover {
-            //box-shadow: 0 .4rem 1rem rgba($color-black,.5);
         }
 
         &__title {
             width: fit-content;
             height: fit-content;
             color: $color-white;
-            //border: .5rem solid $color-black;
             padding: 2rem;
             transition: all .7s;
-            border: .5rem solid transparent;
             background-color: none;
-            //display: table-cell;
-            //vertical-align: middle;
-
 
             &__back {
                 background-color: rgba($color-black,.5);
-                border: .5rem solid rgba($color-white,.8);
             }
 
             &__noBack {
-                border: .5rem solid transparent;
                 background-color: none;
             }
 
             &__main {
-                font-size: 3vw;
+                font-size: 4rem;
                 font-weight: 900;
                 margin-bottom: .5rem;
                 transition: all .3s;
@@ -228,15 +203,14 @@
         display: flex;
         flex-wrap: wrap;
         font-family: 'Lato', sans-serif;
+        font-weight: 300;
         letter-spacing: 1px;
 
         &__text {
            width: 100%;
-           //background-color: rgba($color-seagreen,.7);
            padding: 1rem 0 0 0;
            line-height: 2.2rem;
            text-align: center;
-           //box-shadow: inset 0 1rem 2rem -1rem rgba($color-black,.4);
         }
 
         &__built-with {

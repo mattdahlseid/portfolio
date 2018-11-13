@@ -1,116 +1,17 @@
-main {
-    filter: drop-shadow(0px -5px 10px rgba(0,0,0,0.6));
-}
-
-/*@keyframes openUp {
-    0% { 
-        -webkit-clip-path: polygon(0 0, 50% 0, 100% 0, 100% 100%, 0 100%);
-        clip-path: polygon(0 0, 50% 0, 100% 0, 100% 100%, 0 100%);
-     }
-
-    30% {
-            -webkit-clip-path: polygon(0 0, 50% 0, 100% 0, 100% 100%, 0 100%);
-            clip-path: polygon(0 0, 50% 0, 100% 0, 100% 100%, 0 100%);
-     }
-
-     100% {
-        -webkit-clip-path: polygon(0 0, 50% 11vh, 100% 0, 100% 100%, 0 100%);
-        clip-path: polygon(0 0, 50% 11vh, 100% 0, 100% 100%, 0 100%);
-     }
-}*/
-
 .section-about {
     width: 100%;
-    background-color: $color-black;
     background-size: cover;
     background-position: center;
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    padding: 0 0 10rem 0;
-    
-    @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
-    }
-}
-
-.about__skills-peek {
-    position: absolute;
-    width: 100%;
-    height: 7rem;
-    background-color: rgba($color-black,1);
-    color: $color-seagreen;
-    padding: 1.4rem 0;
-    font-size: 3.3vw;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 900;
-    box-shadow: 0 -.5rem 1rem -.5rem $color-black;
-    pointer-events: auto;
-}
-
-.skills-tools-box {
-    width: 50%;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    font-size: 2rem;
-    color: white;
-    transform: translate(0);
-    transition: all .8s;
-    opacity: 1;
-}
-
-.skills-tools-box.hidden {
-    transform: translateY(20rem);
-    opacity: 0;
-}
-
-.skills {
-    width: 50%;
-}
-
-.tools {
-    width: 50%;
-}
-
-.length {
-    width: 100%;
-}
-
-.section-cave {
-    height: 110vh;
-    width: 100%;
-    background-image: url(../img/cave_L.jpg);
-    background-size: cover;
-    background-position: center;
-    margin-top: -10vh;
-}
-
-.separator-bottom {
-    width: 100%;
-    height: 10vh;
-    position: relative;
-    margin-top: -2vh;
-    background-color: $color-black;
-   
-    @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 84%, 50% 94vh, 0 83vh);
-        clip-path: polygon(0 0, 100% 0, 100% 10vh, -50% 100%, 0 10vh);
-        height: 50vh;
-    }
 }
 
 .section-work {
     display: table;
+    position: relative;
     width: 100%;
     background-color: $color-white;
-    margin-top: -10vh;
-
-    @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
-        margin-top: -50vh;
-    }
-
 }
 
 .section-contact {
@@ -123,6 +24,8 @@ main {
     url('../img/dunes_1_m.jpg');
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     overflow: hidden;
     border: 5rem solid $color-white;
+    position: relative;
 }

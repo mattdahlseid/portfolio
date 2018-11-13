@@ -16,30 +16,15 @@
     }
 }
 
-.text-block {
-    font-size: 4rem;
-    line-height: 6rem;
-    color: white;
-    width: 60%;
-    display: block;
-    margin: 0 auto;
-    padding: 10rem 0;
-}
-
 .heavy {
     font-weight: 900;
 }
 
 
 p {
-    &:not(:last-child) {
-        margin-bottom: 2rem;
-    }
+    margin-bottom: 2rem;
 }
-
 
 .red {
     color: $color-red;
 }
-
-

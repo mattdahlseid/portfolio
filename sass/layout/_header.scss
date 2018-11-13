@@ -3,27 +3,21 @@
     &__hero {
         width: 100%;
         height: 90vh;
-        background-image: url(../img/glacier_blur.png);
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-        pointer-events: none;
-        //transition: all .5s;
-        overflow: hidden;
-
-        /*&:hover {
-            background-image: url(../img/glacier_blur.png);
-        }*/
-
-      /* @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
-            -webkit-clip-path: polygon(0 0, 100% 0, 100% 83vh, 50% 94vh, 0 83vh);
-            clip-path: polygon(0 0, 100% 0, 100% 83vh, 50% 94vh, 0 83vh);
-        }*/
+        /*
+         * Background image is in body to deal with bug on Edge/IE
+         * that causes jittery scrolling on fixed background images
+        */
+        &__image {
+            object-fit: cover;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
     }
 
     &__cluster {
         position: fixed;
-        //margin: 20vh 0 0 2%;
         margin: 0 auto 10vh auto;
         width: 100%;
         bottom: 0;
@@ -49,7 +43,6 @@
         font-size: 14vw;
         color: $color-white;
         font-weight: 900;
-        pointer-events: auto;
         line-height: 6vw;
         opacity: 1;
         animation: titleUp 2s ease;
