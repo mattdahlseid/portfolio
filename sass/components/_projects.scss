@@ -7,13 +7,21 @@
     margin: 0 auto;
     background-color: white;
 
+    @include respond(tab-port) {
+        width: 100%;
+    }
+
     &__category {
         width: 100%;
         text-align: center;
-        font-size: 10.5vw;
-        font-weight: 900;
+        font-size: 8vw;
+        font-weight: 700;
         text-transform: uppercase;
         margin: 3rem auto 0 auto;
+
+        @include respond(tab-port) {
+            font-size: 10.5vw;
+        }
     }
 
     &__container {
@@ -22,54 +30,101 @@
         margin: 4rem auto;
         overflow: hidden;
         transition: all .4s;
-        position: relative;    
+        position: relative; 
 
+        @include respond(tab-port) {
+            width: 85%;
+        }
+        
         &:last-child {
             margin: 4rem auto 8rem auto;
         }
-    
-        @keyframes hoverTransitionIn {
-            0% {
-                width: 65%;
-                height: 50vh;
+
+            @keyframes hoverTransitionIn {
+                0% {
+                    width: 65%;
+                    height: 50vh;
+                }
+                40% {
+                    width: 70%;
+                    height: 50vh;
+                }
+                100% {
+                    width: 70%;
+                    height: 80vh;
+                }
             }
-            40% {
-                width: 70%;
-                height: 50vh;
+
+            @keyframes hoverTransitionOut {
+                0% {
+                    width: 70%;
+                    height: 80vh;
+                }
+                40% {
+                    width: 70%;
+                    height: 50vh;
+                }
+                100% {
+                    width: 65%;
+                    height: 50vh;
+                }
             }
-            100% {
-                width: 70%;
-                height: 80vh;
+        
+
+        @include respond(tab-port) {
+            @keyframes hoverTransitionIn {
+                0% {
+                    width: 85%;
+                    height: 50vh;
+                }
+                40% {
+                    width: 90%;
+                    height: 50vh;
+                }
+                100% {
+                    width: 90%;
+                    height: 80vh;
+                }
             }
-        }
-        // add this to a class to add when clicked to close
-        @keyframes hoverTransitionOut {
-            0% {
-                width: 70%;
-                height: 80vh;
-            }
-            40% {
-                width: 70%;
-                height: 50vh;
-            }
-            100% {
-                width: 65%;
-                height: 50vh;
+
+            @keyframes hoverTransitionOut {
+                0% {
+                    width: 90%;
+                    height: 80vh;
+                }
+                40% {
+                    width: 90%;
+                    height: 50vh;
+                }
+                100% {
+                    width: 85%;
+                    height: 50vh;
+                }
             }
         }
 
+        
+        // add this to a class to add when clicked to close
+       
         &__grow {
             animation: hoverTransitionIn .8s;
             width: 70%;
             height: 80vh;
+
+            @include respond(tab-port) {
+                width: 90%;
+            }
         }
 
         &__shrink {
             animation: hoverTransitionOut .8s;
             width: 65%;
             height: 50vh;
-        }
 
+            @include respond(tab-port) {
+                width: 85%;
+            }
+        }
     }
 
     &__box {
@@ -108,7 +163,7 @@
 
             &__main {
                 font-size: 4rem;
-                font-weight: 900;
+                font-weight: 700;
                 margin-bottom: .5rem;
                 transition: all .3s;
             }
@@ -263,25 +318,6 @@
                 }
             }
         }
-    }
-
-    @keyframes textUp {
-        0% {
-            opacity: 0;
-            transform: translateY(-10rem)
-        }
-        40% {
-            opacity: 0;
-            transform: translateY(-10rem)
-        }
-        100% {
-            transform: translateY(0);
-            opacity: 1;
-        }
-    }
-
-    &__container:hover &__desc__text {
-        //animation: textUp 1.5s;
     }
 
 }

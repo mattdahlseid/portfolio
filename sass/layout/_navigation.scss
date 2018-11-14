@@ -1,9 +1,14 @@
 .navigation {
-    display: block;
+    display: inline-block;
     position: fixed;
     height: 4rem;
     width: 40rem;
     right: 0;
+    text-align: center;
+
+    @include respond(phone) {
+        display: none;
+    }
 
     &__list {
         list-style: none;

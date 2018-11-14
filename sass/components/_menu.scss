@@ -25,6 +25,13 @@
         box-shadow: 0 1rem 3rem rgba($color-black, .2);
         text-align: center;
         cursor: pointer;
+
+        @include respond(phone) {
+            height: 6rem;
+            width: 6rem;
+            top: 3rem;
+            right: 3rem;
+        }
     }
 
     &__background {
@@ -37,6 +44,13 @@
         background-image: radial-gradient($color-red, rgb(192, 16, 16));
         z-index: 1000;
         transition: transform .8s cubic-bezier(0.86,0,0.07,1);
+    
+        @include respond(phone) {
+            height: 4rem;
+            width: 4rem;
+            top: 4rem;
+            right: 4rem;
+        }
     }
 
     &__nav {
@@ -99,12 +113,16 @@
         opacity: 1;
         width: 100%;
         left: 0;
-
+        
     }
 
     &__icon {
         position: relative;
         margin-top: 3.5rem;
+
+        @include respond(phone) {
+            margin-top: 3rem;
+        }
 
         &,
         &::before,

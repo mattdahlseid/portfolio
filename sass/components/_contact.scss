@@ -15,11 +15,18 @@
         width: 70%;
         height: fit-content;
         text-align: center;
-        margin: 0 auto;
+        margin: 8rem auto 0 auto;
         color: $color-white;
         font-size: 2rem;
         line-height: 3rem;
-        margin-top: 5rem;
+
+        @include respond(tab-port) {
+            margin: 16rem auto 0 auto;
+        }
+
+        @include respond(phone) {
+            margin: 5rem auto 0 auto;
+        }
     }
 
     &__content-links {
@@ -29,6 +36,10 @@
         text-align: center;
         margin: 3rem auto 0 auto;
         cursor: pointer;
+
+        @include respond(phone) {
+            font-size: 3rem;
+        }
 
         & i {
             padding: 0 1rem;

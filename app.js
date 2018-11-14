@@ -21,6 +21,7 @@ $(document).on('click', 'a[href^="#"]', function (event) {
 */
 
 // fades out subhead on scroll up 
+
 (function() {
     let skillsPeek = $(".about__skills-peek"),
         skillsPeekOffset = skillsPeek.offset().top/100,
@@ -34,6 +35,7 @@ $(document).on('click', 'a[href^="#"]', function (event) {
             }
         });
 })();
+
 
 
 // grow project container on click
