@@ -1,4 +1,4 @@
-# Matt Dahlseid portfolio site
+# Matt Dahlseid's portfolio
 [View Site](https://mattdahlseid.github.io/)
 
 ## Overview
