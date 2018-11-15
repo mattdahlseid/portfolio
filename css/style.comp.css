@@ -576,7 +576,7 @@ p {
         letter-spacing: 1px;
         text-transform: uppercase; }
     .work__projects__box-1 {
-      background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/intro_main.jpg"); }
+      background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/yosemite.jpg"); }
     .work__projects__box-2 {
       background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/explore_four.png");
       background-position: top; }
@@ -671,7 +671,7 @@ p {
 .section-contact {
   height: 100vh;
   width: 100%;
-  background-image: linear-gradient(to right bottom, black, rgba(255, 255, 255, 0)), url("../img/dunes_1_m.jpg");
+  background-image: linear-gradient(to right bottom, black, rgba(255, 255, 255, 0)), url("../img/dunes.jpg");
   background-size: cover;
   background-position: 40% 50%;
   background-attachment: fixed;
