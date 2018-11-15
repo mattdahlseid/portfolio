@@ -37,7 +37,7 @@
         }
         
         &:last-child {
-            margin: 4rem auto 8rem auto;
+            margin: 4rem auto 7rem auto;
         }
 
             @keyframes hoverTransitionIn {
@@ -83,14 +83,46 @@
                 }
                 100% {
                     width: 90%;
-                    height: 80vh;
+                    height: 75vh;
                 }
             }
 
             @keyframes hoverTransitionOut {
                 0% {
                     width: 90%;
-                    height: 80vh;
+                    height: 75vh;
+                }
+                40% {
+                    width: 90%;
+                    height: 50vh;
+                }
+                100% {
+                    width: 85%;
+                    height: 50vh;
+                }
+            }
+        }
+
+        @include respond(phone) {
+            @keyframes hoverTransitionIn {
+                0% {
+                    width: 85%;
+                    height: 50vh;
+                }
+                40% {
+                    width: 90%;
+                    height: 50vh;
+                }
+                100% {
+                    width: 90%;
+                    height: 85vh;
+                }
+            }
+
+            @keyframes hoverTransitionOut {
+                0% {
+                    width: 90%;
+                    height: 85vh;
                 }
                 40% {
                     width: 90%;
@@ -112,7 +144,12 @@
             height: 80vh;
 
             @include respond(tab-port) {
+                height: 75vh;
                 width: 90%;
+            }
+
+            @include respond(phone) {
+                height: 85vh;
             }
         }
 
@@ -141,8 +178,11 @@
         background-position: center;
         filter: contrast(110%) brightness(110%);
 
-        &:hover &__title {
-            background-color: rgba($color-black,.8);
+        // only allow hover on non-mobile devices
+        @media not all and (hover: none) {
+            &:hover &__title {
+                background-color: rgba($color-black,.8);
+            }
         }
 
         &__title {
@@ -170,10 +210,14 @@
 
             &__cat {
                 display: inline-block;
-                font-size: 2rem;
+                font-size: 1.8rem;
                 border-top: .3rem solid $color-red;
-                padding-top: 1rem;
+                padding-top: .6rem;
                 transition: all .3s;
+                font-family: 'Lato', sans-serif;
+                font-weight: 300;
+                letter-spacing: 1px;
+                text-transform: uppercase;
             }
         }
 
