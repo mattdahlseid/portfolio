@@ -14,3 +14,8 @@ This website was created using:
 
 ## Acknowledgements
 The navigation menu is based on a lesson from Jonas Schmedtmann's "[Advanced CSS and Sass](https://www.udemy.com/advanced-css-and-sass/)" course on Udemy.
+
+## To do
+* Improve accessibility
+* Flesh out/clarify comments
+* Work on responsiveness tweaks
