@@ -105,6 +105,38 @@
                 }
             }
         }
+
+        @include respond(phone) {
+            @keyframes hoverTransitionIn {
+                0% {
+                    width: 85%;
+                    height: 30rem;
+                }
+                40% {
+                    width: 90%;
+                    height: 30rem;
+                }
+                100% {
+                    width: 90%;
+                    height: 55rem;
+                }
+            }
+
+            @keyframes hoverTransitionOut {
+                0% {
+                    width: 90%;
+                    height: 55rem;
+                }
+                40% {
+                    width: 90%;
+                    height: 30rem;
+                }
+                100% {
+                    width: 85%;
+                    height: 30rem;
+                }
+            }
+        }
         
         // add this to a class to add when clicked to close
        
