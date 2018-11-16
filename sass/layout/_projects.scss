@@ -138,7 +138,6 @@
             }
         }
         
-        // add this to a class to add when clicked to close
        
         &__grow {
             animation: hoverTransitionIn .8s;
@@ -150,7 +149,6 @@
             }
 
             @include respond(tab-port) {
-                //height: 75vh;
                 width: 90%;
             }
 
