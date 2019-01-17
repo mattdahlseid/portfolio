@@ -1,5 +1,5 @@
 # Matt Dahlseid's portfolio
-[View Site](https://mattdahlseid.github.io/)
+[View Site](https://mattdahlseid.github.io/portfolio-v1/)
 
 ## Overview
 This is a portfolio site used to display my work as a front-end developer and multimedia journalist. It's a work in progress.
